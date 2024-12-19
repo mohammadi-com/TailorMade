@@ -2,7 +2,7 @@ import os
 
 from fastapi import FastAPI
 import openai_wrapper
-from models.templates import john_doe_resume
+from models.templates import mohammad_sf_resume
 from models.tailoring_options import TailoringOptions
 from models.job import Job
 from models.profile import Profile, Resume
@@ -17,21 +17,21 @@ def root():
     return {"message": "Hello World"}
 
 @app.post("/generate-tailored-plain-resume")
-def generate_tailored_plain_resume(job: Job, profile: Profile = Profile(Resume(john_doe_resume)), tailoring_options: TailoringOptions = TailoringOptions()) -> str:
+def generate_tailored_plain_resume(job: Job, profile: Profile = Profile(Resume(mohammad_sf_resume)), tailoring_options: TailoringOptions = TailoringOptions()) -> str:
     """
     Gets resume and job description in plain text and returns tailored resume as a string
     """
     return openai_wrapper.create_tailored_plain_resume(profile.resume.text, job.description, tailoring_options.ai_model, tailoring_options.resume_template)
 
 @app.post("/generate-tailored-plain-coverletter")
-def generate_tailored_plain_coverletter(job: Job, profile: Profile = Profile(Resume(john_doe_resume)), tailoring_options: TailoringOptions = TailoringOptions()) -> str:  # We should not pass tailoring options everytime, should be a config for each user. It could be kept with a session for example.
+def generate_tailored_plain_coverletter(job: Job, profile: Profile = Profile(Resume(mohammad_sf_resume)), tailoring_options: TailoringOptions = TailoringOptions()) -> str:  # We should not pass tailoring options everytime, should be a config for each user. It could be kept with a session for example.
     """
     Gets resume and job description in plain text and returns customized cover letter as a string
     """
     return openai_wrapper.create_tailored_plain_coverletter(profile.resume.text, job.description, tailoring_options.ai_model)
 
 @app.post("/generate-tailored-latex-resume")
-def generate_tailored_latex_resume(job: Job, profile: Profile = Profile(Resume(john_doe_resume)), tailoring_options: TailoringOptions = TailoringOptions()) -> str:
+def generate_tailored_latex_resume(job: Job, profile: Profile = Profile(Resume(mohammad_sf_resume)), tailoring_options: TailoringOptions = TailoringOptions()) -> str:
     """
     Gets resume and job description in plain text and returns tailored resume as a latex
     """
@@ -40,7 +40,7 @@ def generate_tailored_latex_resume(job: Job, profile: Profile = Profile(Resume(j
     return trimed_tailored_resume
 
 @app.post("/generate-latex-resume-save")
-def generate_tailored_latex_resume_save(job: Job, profile: Profile = Profile(Resume(john_doe_resume)), tailoring_options: TailoringOptions = TailoringOptions()):
+def generate_tailored_latex_resume_save(job: Job, profile: Profile = Profile(Resume(mohammad_sf_resume)), tailoring_options: TailoringOptions = TailoringOptions()):
     """
     Gets resume and job description in plain text and saves tailored resume
     """
@@ -51,7 +51,7 @@ def generate_tailored_latex_resume_save(job: Job, profile: Profile = Profile(Res
     # Make a folder for each job description to save PDF, .tex, and .tar files of tailored resume.
     os.makedirs(f'./CVs/{company_name}', exist_ok=True)
     latex_compiler_response, _ = openai_wrapper.covert_plain_resume_to_latex(
-        tailored_plain_resume, tailoring_options.ai_model, tailoring_options.resume_template
+        company_name, tailored_plain_resume, tailoring_options.ai_model, tailoring_options.resume_template
     )
     # Path to save pdf file of tailored resume
     pdf_path = f'./CVs/{company_name}/{APPLICANT_NAME}_cv.pdf'
