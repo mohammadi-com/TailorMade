@@ -725,67 +725,79 @@ Template_Details = {
   }
 }
 
-john_doe_resume = """John Doe
-
-[Email: johndoe@example.com] | [Phone: +44 123 456 7890] | [LinkedIn: linkedin.com/in/johndoe] | [GitHub: github.com/johndoe]
-London, UK
-
-PROFESSIONAL SUMMARY
-
-Passionate and detail-oriented Software Engineer with 5+ years of experience designing, developing, and implementing scalable and efficient software solutions. Adept at collaborating with cross-functional teams, writing clean code, and leveraging cutting-edge technologies to drive business success. Skilled in back-end development, API integrations, and cloud computing.
-
-TECHNICAL SKILLS
-
-Programming Languages: Python, JavaScript, Java, C++
-Frameworks & Libraries: React.js, Node.js, Django, Spring Boot
-Databases: MySQL, PostgreSQL, MongoDB
-DevOps & Cloud: Docker, Kubernetes, AWS, Azure, CI/CD pipelines
-Tools: Git, JIRA, Jenkins, Elasticsearch, Redis
-
-PROFESSIONAL EXPERIENCE
-
-Software Engineer
-
-Tech Innovators Ltd., London, UK
-June 2020 – Present
-	•	Designed and implemented scalable APIs that improved system performance by 25%.
-	•	Migrated legacy systems to cloud-based architecture, reducing downtime by 30%.
-	•	Developed and deployed automated CI/CD pipelines, speeding up software delivery cycles by 40%.
-	•	Collaborated with product managers to gather requirements and optimize user experience.
-
-Junior Software Engineer
-
-Digital Solutions Inc., London, UK
-August 2018 – May 2020
-	•	Built responsive front-end applications using React.js, improving user engagement by 15%.
-	•	Debugged and resolved critical back-end issues, ensuring 99.9% uptime for client systems.
-	•	Conducted code reviews and implemented best practices to maintain high-quality codebases.
-	•	Developed scripts to automate routine tasks, saving over 10 hours of manual work per week.
-
-EDUCATION
-
-Bachelor of Science in Computer Science
-University College London (UCL)
-Graduated: 2018
-
-PROJECTS
-
-E-commerce Platform:
-	•	Built a full-stack e-commerce web app using React.js, Node.js, and MongoDB.
-	•	Implemented a recommendation engine using machine learning to boost sales by 20%.
-
-IoT Device Management System:
-	•	Designed a cloud-based dashboard to monitor and manage IoT devices, improving reliability by 30%.
-
-CERTIFICATIONS
-	•	AWS Certified Solutions Architect – Associate
-	•	Certified Kubernetes Administrator (CKA)
-	•	React Developer Certification
-
-PERSONAL ATTRIBUTES
-	•	Strong problem-solving skills with a passion for continuous learning.
-	•	Excellent team player with a proven ability to collaborate across departments.
-	•	Effective communicator, capable of presenting technical concepts to non-technical audiences.
+mohammad_sf_resume = """
+Mohammad Soleymani Far
+Email: msoleymanifar72@gmail.com
+LinkedIn: https://www.linkedin.com/in/mohammad-sf/
+Phone: +3726027348
+Location: Tallinn, Estonia
+**Summary**
+A seasoned software engineer with over 10 years in back-end development for high-traffic applications (+30 million users),
+and 7+ years of technical leadership, also experienced in DevOps and cloud engineering.
+**Experiences**
+Role: Senior Software Engineer (Contractor)
+Company: Unity Ads
+Location: Helsinki, Finland
+Date: 10/2023 - 01/2024
+- Tuned the algorithms related to calculate CPI (Cost per Install)
+- Developed some new algorithms to calculate Dynamic CPI
+- Deployed new versions to the production
+- Monitored performance of production
+- Tuned the dev and production monitoring panels
+--------------------------------------------
+Role: Senior Back-end Engineer(Contractor)
+Company: Straumann Group
+Location: Amsterdam, Netherlands
+Date: 06/2023 - 12/2023
+- Developed the APIs related to the TSC (Tooth Shape Completion) Team
+- Attended in Data engineering development parts
+- Developed some ETL tools for the AI/ML/Data-analysis teams
+- Monitored the performance of software in a production environment
+- Tuned the performance of code by profiling and removing useless resource-consuming codes
+- Reviewed codes of teammates
+- Deployed codes to the production environment
+--------------------------------------------
+Role: Tech Lead
+Company: Kiosk Crypto Exchange
+Location: Tehran, Iran
+Date:08/2022 - 09/2023
+- Supervised the code review, deployment, and QA workflows ensuring consistent code quality and timely deployments
+- Provided regular 1:1 meetings with technical staff and tailored quarterly growth plans for each person based on their
+weaknesses
+- Defined coding standards and developed automation for checking these standards in the pipeline
+- Accelerated development speed and launched the project within a month of joining
+- Streamlined the recruitment process of the company by providing a good hiring plan and a good recruiting flow
+- Attended to the development of the order book component
+- Integrated different block-chain networks such as Tron into the back-end part of the exchange
+- Tuned the JVM resource consumptions by defining limits in the JVM configurations which led to 80% reduction in RAM usage
+and 50% reduction of CPU usage
+--------------------------------------------
+Role: Co-Founder & Software Engineer
+Company: Quiz of Kings
+Location: Tehran, Iran
+Date: 05/2015 - 07/2022
+Quiz of Kings is the most popular online Trivia game with more than 30 million unique installs, published in North America and MENA regions.
+- Architected and executed a resilient code and infrastructure framework that reliably supported over 30 million users, with
+500K daily active and 50K concurrent users
+- Led Technical staff of cross-functional teams (Question Factory, Growth, etc)
+- Led the technical recruitment team resulting in hiring engineers for different departments
+- Provided a pipeline for technical recruitment of the company
+- Created a robust technical workflow, including code reviews, testing pipelines, and deployment strategies.
+- Developed and maintained more than 200 different APIs, and nearly 15 microservices using Java, PHP, Golang, and
+TypeScript languages and utilizing the DDD approach.
+- Developed an event-driven microservice named “Question Factory” enabling users to write, edit, and review each other’s
+questions leading to the game becoming viral 3 times and increasing 50% in revenue.
+- Achieved 80% infra cost savings by migrating and optimizing the backend from PHP, Symfony 2.6, MySQL stack to Golang,
+Gin, and sharded MongoDB stack.
+- Developed Back-Office parts of the project using React JS, Angular JS, and Metronic.
+**Skills**
+Golang, TypeScript, NodeJS, ExpressJS, Gin, AWS, GCP, Docker, Kubernetes, GraphQL, PHP, Symfony, Laravel, Ansible, Elastic
+Search, Redis, MySQL, MongoDB, Helm, TDD, BDD, Test, Pipeline, CI/CD
+**Education**
+Computer Engineering
+Amirkabir University of Technology (Tehran Polytechnic)
+04/2016
+Tehran, Iran
 """
 john_doe_legal_authorization = """
   eu_work_authorization: Yes

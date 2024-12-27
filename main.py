@@ -2,7 +2,7 @@ import os
 
 from fastapi import FastAPI
 import openai_wrapper
-from models.templates import john_doe_resume, john_doe_legal_authorization, john_doe_preferences
+from models.templates import mohammad_sf_resume, john_doe_legal_authorization, john_doe_preferences
 from models.tailoring_options import TailoringOptions
 from models.job import Job
 from models.profile import Profile, Resume
@@ -17,7 +17,7 @@ def root():
     return {"message": "Hello World"}
 
 @app.post("/determine_eligibility")
-def determine_eligibility(job: Job, profile: Profile = Profile(resume=Resume(john_doe_resume),legal_authorization=john_doe_legal_authorization), tailoring_options: TailoringOptions = TailoringOptions()):
+def determine_eligibility(job: Job, profile: Profile = Profile(resume=Resume(mohammad_sf_resume),legal_authorization=john_doe_legal_authorization), tailoring_options: TailoringOptions = TailoringOptions()):
     """
     Gets profile and job description and determines eligibility for applying to the job
     """
@@ -27,7 +27,7 @@ def determine_eligibility(job: Job, profile: Profile = Profile(resume=Resume(joh
         "reason": reason
     }
 @app.post("/determine_suitability")
-def determine_suitability(job: Job, profile: Profile = Profile(resume=Resume(john_doe_resume), preferences=john_doe_preferences), tailoring_options: TailoringOptions = TailoringOptions()):
+def determine_suitability(job: Job, profile: Profile = Profile(resume=Resume(mohammad_sf_resume), preferences=john_doe_preferences), tailoring_options: TailoringOptions = TailoringOptions()):
     """
     Gets profile and job description and determines suitability for applying to the job 
     """
@@ -38,21 +38,21 @@ def determine_suitability(job: Job, profile: Profile = Profile(resume=Resume(joh
     }
 
 @app.post("/generate-tailored-plain-resume")
-def generate_tailored_plain_resume(job: Job, profile: Profile = Profile(resume=Resume(john_doe_resume)), tailoring_options: TailoringOptions = TailoringOptions()) -> str:
+def generate_tailored_plain_resume(job: Job, profile: Profile = Profile(resume=Resume(mohammad_sf_resume)), tailoring_options: TailoringOptions = TailoringOptions()) -> str:
     """
     Gets resume and job description in plain text and returns tailored resume as a string
     """
     return openai_wrapper.create_tailored_plain_resume(profile.resume.text, job.description, tailoring_options.ai_model, tailoring_options.resume_template)
 
 @app.post("/generate-tailored-plain-coverletter")
-def generate_tailored_plain_coverletter(job: Job, profile: Profile = Profile(Resume(john_doe_resume)), tailoring_options: TailoringOptions = TailoringOptions()) -> str:  # We should not pass tailoring options everytime, should be a config for each user. It could be kept with a session for example.
+def generate_tailored_plain_coverletter(job: Job, profile: Profile = Profile(Resume(mohammad_sf_resume)), tailoring_options: TailoringOptions = TailoringOptions()) -> str:  # We should not pass tailoring options everytime, should be a config for each user. It could be kept with a session for example.
     """
     Gets resume and job description in plain text and returns customized cover letter as a string
     """
     return openai_wrapper.create_tailored_plain_coverletter(profile.resume.text, job.description, tailoring_options.ai_model)
 
 @app.post("/generate-tailored-latex-resume")
-def generate_tailored_latex_resume(job: Job, profile: Profile = Profile(Resume(john_doe_resume)), tailoring_options: TailoringOptions = TailoringOptions()) -> str:
+def generate_tailored_latex_resume(job: Job, profile: Profile = Profile(Resume(mohammad_sf_resume)), tailoring_options: TailoringOptions = TailoringOptions()) -> str:
     """
     Gets resume and job description in plain text and returns tailored resume as a latex
     """
@@ -61,7 +61,7 @@ def generate_tailored_latex_resume(job: Job, profile: Profile = Profile(Resume(j
     return trimed_tailored_resume
 
 @app.post("/generate-latex-resume-save")
-def generate_tailored_latex_resume_save(job: Job, profile: Profile = Profile(Resume(john_doe_resume)), tailoring_options: TailoringOptions = TailoringOptions()):
+def generate_tailored_latex_resume_save(job: Job, profile: Profile = Profile(Resume(mohammad_sf_resume)), tailoring_options: TailoringOptions = TailoringOptions()):
     """
     Gets resume and job description in plain text and saves tailored resume
     """
