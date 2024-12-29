@@ -729,6 +729,7 @@ mohammad_sf_resume = """
 Mohammad Soleymani Far
 Email: msoleymanifar72@gmail.com
 LinkedIn: https://www.linkedin.com/in/mohammad-sf/
+GitHub: https://github.com/mohammadsf7293
 Phone: +3726027348
 Location: Tallinn, Estonia
 **Summary**
