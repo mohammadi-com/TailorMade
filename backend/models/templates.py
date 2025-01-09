@@ -725,68 +725,104 @@ Template_Details = {
   }
 }
 
-john_doe_resume = """John Doe
+john_doe_resume = """
+Hoda Sadat Jafari
+Location: Tallinn, Estonia
+Email: hoda.sadat.jafari@gmail.com
+Github: https://github.com/hodasadatjafari
+LinkedIn: https://www.linkedin.com/in/hodasadatjafari
+Phone: +3726027347
 
-[Email: johndoe@example.com] | [Phone: +44 123 456 7890] | [LinkedIn: linkedin.com/in/johndoe] | [GitHub: github.com/johndoe]
-London, UK
+**Summary**
 
-PROFESSIONAL SUMMARY
+Software Engineer with 7+ years of experience in developing and deploying RESTful APIs and web applications. Skilled in Python, Django, and AWS cloud services. Strong background in data science tools and databases. Proven track record of optimizing system performance and enhancing operational efficiency. Passionate about leveraging technology to solve complex problems and drive business growth.
 
-Passionate and detail-oriented Software Engineer with 5+ years of experience designing, developing, and implementing scalable and efficient software solutions. Adept at collaborating with cross-functional teams, writing clean code, and leveraging cutting-edge technologies to drive business success. Skilled in back-end development, API integrations, and cloud computing.
+**Skills**
 
-TECHNICAL SKILLS
+Programming Languages: Python, SQL, Java
+Web Development: Django REST framework, and GeoDjango, Familiar with HTML, JavaScript, CSS
+Databases: PostgreSQL, PostGIS, SQLite, MySQL, Familiar with Elasticsearch
+Cloud Services: AWS (EC2, Lambda, Kinesis, S3, API Gateway, DynamoDB, RDS, CloudWatch, boto3)
+Data Science Tools: Numpy, Pandas, Matplotlib, Seaborn
+Development tools: Docker, Celery, RabbitMQ, Redis, Atlassian tools (Jira, Bitbucket, Confluence), Git, agile (Scrum)
+Education
 
-Programming Languages: Python, JavaScript, Java, C++
-Frameworks & Libraries: React.js, Node.js, Django, Spring Boot
-Databases: MySQL, PostgreSQL, MongoDB
-DevOps & Cloud: Docker, Kubernetes, AWS, Azure, CI/CD pipelines
-Tools: Git, JIRA, Jenkins, Elasticsearch, Redis
+**Experiences**
 
-PROFESSIONAL EXPERIENCE
+Role:Software Engineer
+Company: Sphaira (Contrctor, Remote)
+Location: Berlin, Germany
+Date: Jun. 2024 ‑ Current
+Sphaira specializes in autonomous logistics solutions for sensitive environments, utilizing robotics technology for efficient goods transportation.
+- Engineered more than 10 APIs that streamlined task collection and delivery to autonomous robots, enhancing the efficiency of goodstransportation.
+- Boosted communication precision between robots and managers using Django Rest Framework and PostgreSQL, resulting in improved operational visibility.
+- Integrated the VDA5050 standard, optimizing robot task management and reducing delivery times by 30%.
+--------------------------------------------
+Role: Software Engineer
+Company: Fleetpark (Remote - Full Time)
+Location: Berlin, Germany
+Date: May. 2020 ‑ Aug. 2023
+FleetSpark provides intelligent fleet management solutions, optimizing logistics and transportation through advanced technology.
+- Developed and deployed over 200 RESTful APIs, connecting to external systems like TomTom for route optimization, Stripe for pay‑
+ments, Twilio for SMS, and Slack for managements.
+- Achieved a 99.9% uptime by containerizing the project with Docker and monitoring through AWS ECR, ensuring consistent service
+delivery.
+- Introduced JWT authentication, enhancing the security of the platform
+- Expanded test coverage with 300+ unit tests, improving code reliability and reducing bugs in production
+- Profiled APIs using the Silk package to identify performance bottlenecks, optimizing response times and increasing efficiency by 50%
+through code refactoring and SQL query optimization.
+--------------------------------------------
+Role: Software Developer
+Company: CiC & APA research center, Amirkabir University of Technology
+Location: Tehran, Iran
+Date: Jan. 2019 ‑ Mar. 2020
+CIC and APA Research Center provides innovative software solutions to enhance academic and administrative processes at Amirkabir University.
+- Managed a project that automated professor promotion processes, reducing manual data entry by 80% through the creation of over
+80 dynamic HTML forms.
+- Built a vulnerability analysis tool, identifying and alerting users to security issues, leading to detection of potential software vulnera‑
+bilities.
+- Coached three interns, improving their technical skills in Python and Django and boosting their productivity
+Software Developer Tehran, Iran
+--------------------------------------------
+Role: Software Developer
+Company: Chaapaar
+Location: Tehran, Iran
+Date: Oct. 2016 ‑ Jan. 2019
+Chaapaar is an Iranian email service provider, focused on delivering secure and reliable communication solutions.
+- Improved spam detection accuracy by 30% by implementing a Naïve Bayes classifier and integrating it with Apache SpamAssassin.
+- Conducted regular security assessments, including code reviews and vulnerability scanning using Burp Suite, to identify and mitigate potential threats.
+- Reviewed source code to detect and address security vulnerabilities, ensuring compliance with industry best practices.
+- Identified and reported vulnerabilities to development teams, facilitating timely fixes and improving system security.
+- Team Collaboration: Worked closely with cross‑functional teams to ensure secure and efficient code deployment processes.
 
-Software Engineer
+--------------------------------------------
+Role: Software Developer
+Company: Datis
+Location: Tehran, Iran
+Date: Feb. 2014 ‑ Aug. 2016
+Software Developer Tehran, Iran
+Datis specializes in log data analysis for security information and event management (SIEM) applications.
+• Designed 50+ regex patterns for identifying log data patterns, improving data classification accuracy.
+• Applied clustering and classification algorithms, achieving a 95% precision in log data categorization and significantly accelerating
+security event identification.
+--------------------------------------------
 
-Tech Innovators Ltd., London, UK
-June 2020 – Present
-	•	Designed and implemented scalable APIs that improved system performance by 25%.
-	•	Migrated legacy systems to cloud-based architecture, reducing downtime by 30%.
-	•	Developed and deployed automated CI/CD pipelines, speeding up software delivery cycles by 40%.
-	•	Collaborated with product managers to gather requirements and optimize user experience.
+**Education**
 
-Junior Software Engineer
-
-Digital Solutions Inc., London, UK
-August 2018 – May 2020
-	•	Built responsive front-end applications using React.js, improving user engagement by 15%.
-	•	Debugged and resolved critical back-end issues, ensuring 99.9% uptime for client systems.
-	•	Conducted code reviews and implemented best practices to maintain high-quality codebases.
-	•	Developed scripts to automate routine tasks, saving over 10 hours of manual work per week.
-
-EDUCATION
-
-Bachelor of Science in Computer Science
-University College London (UCL)
-Graduated: 2018
-
-PROJECTS
-
-E-commerce Platform:
-	•	Built a full-stack e-commerce web app using React.js, Node.js, and MongoDB.
-	•	Implemented a recommendation engine using machine learning to boost sales by 20%.
-
-IoT Device Management System:
-	•	Designed a cloud-based dashboard to monitor and manage IoT devices, improving reliability by 30%.
-
-CERTIFICATIONS
-	•	AWS Certified Solutions Architect – Associate
-	•	Certified Kubernetes Administrator (CKA)
-	•	React Developer Certification
-
-PERSONAL ATTRIBUTES
-	•	Strong problem-solving skills with a passion for continuous learning.
-	•	Excellent team player with a proven ability to collaborate across departments.
-	•	Effective communicator, capable of presenting technical concepts to non-technical audiences.
+Degree: M.S. in Artificial Intelligence
+University: Amirkabir University of Technology
+Location: Tehran, Iran
+Date: Sep. 2011 ‑ Jan. 2014
+- Thesis: Extractive speech summarization using different machine learning algorithms.
+- GPA: 3.62/4 (Rank second)
+--------------------------------------------
+Degree: B.S. in Software Engineering
+University: Shahid Beheshti University
+Location: Tehran, Iran
+Date: Sep. 2005 ‑ Apr. 2010
+- Thesis: STeP‑1: Standard Text preparation for the Persian language Web pages.
 """
+
 john_doe_legal_authorization = """
   eu_work_authorization: Yes
   us_work_authorization: Yes
